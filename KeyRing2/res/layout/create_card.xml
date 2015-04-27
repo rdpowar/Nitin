@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/scrollView1"
+                android:layout_alignParentTop="true"
+                android:text="@string/searchBy"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000" />
+
+            <!-- <RadioGroup -->
+            <!-- android:id="@+id/radioGroup_search" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" > -->
+
+
+            <!-- <RadioButton -->
+            <!-- android:id="@+id/customerId_search" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="@string/customerNo" -->
+            <!-- android:checked="true" -->
+            <!-- android:textAppearance="?android:attr/textAppearanceSmall" -->
+            <!-- android:textColor="#000000" -->
+            <!-- /> -->
+
+
+            <!-- <RadioButton -->
+            <!-- android:id="@+id/deviceId_search" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:text="@string/deviceId" -->
+            <!-- android:textAppearance="?android:attr/textAppearanceSmall" -->
+            <!-- android:textColor="#000000" /> -->
+
+
+            <!--
+                     <RadioButton
+                    android:id="@+id/rsaId_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="RSA ID"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#000000" />
+            -->
+            <!-- </RadioGroup> -->
+
+            <TextView
+                android:id="@+id/text_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000" />
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/editText_search" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:imeOptions="normal" -->
+            <!-- android:textAppearance="?android:attr/textAppearanceSmall" -->
+            <!-- android:layout_marginBottom="5dp" -->
+            <!-- android:layout_marginTop="5dp" -->
+            <!-- android:inputType="number" -->
+            <!-- android:paddingLeft="20dp" > -->
+            <!-- </EditText> -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/button1" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:layout_marginBottom="10dip" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:minWidth="100dp" -->
+            <!-- android:onClick="search" -->
+            <!-- android:text="@string/search" /> -->
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dp"
+                android:minWidth="100dp"
+                android:onClick="scan"
+                android:text="@string/scanqrcode" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Front photo" >
+                </Button>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher" >
+                </ImageView>
+            </LinearLayout>
+            
+            
+            
+                        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                            <EditText  
+                                android:id="@+id/edittextbarcode1"
+                                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0123456789"
+                    />
+                            
+                <Button
+                    android:id="@+id/buttonbarcode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Generate Barcode" >
+                </Button>
+
+                <ImageView
+                    android:id="@+id/imageViewbarcode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout> <!-- android:background="@drawable/edit_text_selector" -->
+<!-- android:background="@drawable/spinner_selector" -->
+<!-- android:background="@drawable/button_selector" -->
